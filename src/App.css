@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+html {
+  background-image: url(https://wallpapercave.com/wp/wp2553747.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 400px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  min-width: 410px;
+}
+
+h1,h2,h3,h4,p,ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+}
+input {
+  outline: 0;
+}
+img {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.pokedex__hi {
+  font-size: 3.5em;
+  color: rgb(231, 62, 62);
+}
+.pokedex__p {
+  padding-top: 1rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+}
+.pokedex__btn {
+  border-radius: 3px;
+  width: 5rem;
+  height: 30px;
+  margin-left: 2em;
+  color: white;
+  background-color: black;
+}
+.pokedex__formStart {
+  padding: 1rem;
+}
+.pokedex {
+  background-color: white;
+}
+.poke-card__type {
+  padding: 8px 10px;
+  border-radius: 14%;
+}
+.pokedex__search {
+  border: 0.4px rgb(251, 134, 134) solid;
+  height: 30px;
+}
+.pokedex__form {
+  margin: 0;
+  padding-left: 8%;
+}
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.object-cover {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+.pokedex__welcome {
+  padding: 0 8%;
+  font-size: 1.7rem;
+  display: flex;
+  flex-wrap: nowrap;
+  color: red;
+  font-weight: 700;
+}
+.pokedex__welcome p {
+  color: black;
+  font-weight: 400;
+}
+.pokedex__searchFlex {
+  display: flex;
+  padding: 1rem 0;
+  gap: 15%;
+}
+.selectType {
+  width: 25%;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+.pagination__btn {
+  width: 50px;
+}
+.page {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.pagination__prev:hover {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 1px 10px;
+}
+.page__active {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 1px 10px;
+}
+.Pokeinfo {
+  position: relative;
+  top: 10rem;
+  border-width: 10px;
+  margin: auto;
+  background-image: url(./infoback.png);
+  background-repeat: no-repeat;
+  height: 28rem;
+}
+.Pokeinfo__img {
+  position: relative;
+  bottom: 3.5rem;
+  margin: 0 auto;
+}
+.Pokeinfo__id {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.pokedexInfo__name {
+  font-size: 3rem;
+}
+.Pokeinfo__type {
+  display: inline-block;
+  flex-wrap: nowrap;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 1rem;
+  width: 15%;
+  background-color: rgb(236, 233, 233);
+  border-radius: 5%;
+}
+.pokedexinfo__Stats {
+  border: 2px black solid;
+}
+.pokedexInfo__Movements {
+  background-color: red;
+  display: flex;
+}
+.pokedexInfo__move {
+  width: 100%;
+}
+.pokedex_Dream {
+  padding-top: 2em;
+  margin: 0 auto;
+}
+.pokedex_shiny {
+  position: relative;
+  margin: 0 auto;
+}
+.pokecard__abilities {
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  margin: 1rem;
+}
+.pokecard__abilities li {
+  background-color: rgb(236, 233, 233);
+  border-radius: 10%;
+  padding: 10px;
+}
+.pokecard__abilities {
+  margin-top: 12px;
+  color: black;
+  padding: 10px;
+  border-radius: 10%;
+}
+.selecType__search {
+  font-family: 'Roboto', sans-serif;
+}
+/* //Mas Grande para Escitorio */
+@media only screen and (max-width: 980px) {
+  .pokedex__welcome {
+    font-size: 1.5rem;
+  }
+  .pokedexInfo__name {
+    font-size: 1.5rem;
+  }
+  .Pokeinfo__type {
+    padding-top: 2rem;
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    width: 15%;
+  }
+  .pokedex__searchFlex {
+    display: flex;
+    gap: 5%;
+  }
+  .selectType {
+    width: 15%;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .pokedex__welcome {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .pokedex__hi {
+    font-size: 3em;
+    color: rgb(231, 62, 62);
+  }
+  .pokedex__welcome {
+    font-size: 1rem;
+  }
+  .pokedex__searchFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+  }
+  .selectType {
+    width: 15%;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .pokedex__welcome {
+    font-size: 0.7rem;
+    padding-left: 30px;
+  }
+}
+.poke-card {
+  width: 100%;
+  max-width: 330px;
+  border-radius: 0.7em;
+  border: 0.4em solid #87aa3b;
+}
+.poke-card__header {
+  background-color: #aaa;
+  height: 120px;
+  position: relative;
+}
+.poke-card__sprite {
+  width: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.poke-card__body {
+  padding-top: 2.6em;
+}
+.poke-card__name {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.poke-card__types-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.poke-card__type {
+  position: relative;
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.poke-card__type:nth-child(2)::before {
+  content: "/";
+  position: absolute;
+  left: -11px;
+}
+.poke-card__footer {
+  padding: 1em 0.8em 2em;
+}
+.poke-card__stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 25px 5px;
+}
+.poke-card__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+}
+.poke-card__label {
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-weight: 200;
+  font-size: 0.6rem;
+}
+.home img {
+  margin: 0 auto;
+}
+.zoom {
+  transition: transform 0.2s;
+}
+.zoom:hover {
+  transform: scale(1.05);
+}
+.bg-grass {
+  background: linear-gradient(178.92deg,
+      #7ec6c5 0.92%,
+      #abdac6 47.96%,
+      #cae099 99.08%);
+}
+.bg-fire {
+  background: linear-gradient(176.37deg,
+      #f96d6f -32.26%,
+      #e35825 22.55%,
+      #e8ae1b 125.72%);
+}
+.bg-water {
+  background: linear-gradient(179.57deg,
+      #133258 -70.14%,
+      #1479fb 56.16%,
+      #82b2f1 214.85%);
+}
+.bg-bug {
+  background: linear-gradient(177.56deg,
+      #62db60 -58.92%,
+      #3bb039 16.57%,
+      #aaffa8 209.53%);
+}
+.bg-fighting {
+  background: linear-gradient(176.83deg,
+      #96402a -8.78%,
+      #f1613c 169.09%,
+      #cb735d 242.33%);
+}
+.bg-flying {
+  background: linear-gradient(181.51deg,
+      #735259 -6.44%,
+      #bc6b7c 121.95%,
+      #7c3f4c 186.11%);
+}
+.bg-normal {
+  background: linear-gradient(181.51deg,
+      #ce9ca7 -6.44%,
+      #bc6b7c 121.95%,
+      #e46782 186.11%);
+}
+.bg-poison {
+  background: linear-gradient(177.03deg,
+      #5b3184 -11.97%,
+      #a564e3 71.28%,
+      #ce9bff 135.64%);
+}
+.bg-rock {
+  background: linear-gradient(177.03deg,
+      #7e7e7e -11.97%,
+      #8d8d94 57.49%,
+      #d3d3d3 135.64%);
+}
+.bg-ghost {
+  background: linear-gradient(177.03deg,
+      #323569 -11.97%,
+      #454aa8 57.49%,
+      #787dda 135.64%);
+}
+.bg-dark {
+  background: linear-gradient(179.75deg,
+      #282a29 -19.96%,
+      #171f1d 43.67%,
+      #2a1111 138.4%);
+}
+.bg-steel {
+  background: linear-gradient(179.75deg,
+      #5e736c -19.96%,
+      #728881 43.67%,
+      #a8a8a8 138.4%);
+}
+.bg-electric {
+  background: linear-gradient(179.75deg,
+      #f6ea04 -19.96%,
+      #ffff56 43.67%,
+      #e2ff8c 138.4%);
+}
+.bg-magic {
+  background: linear-gradient(179.75deg,
+      #971b45 -19.96%,
+      #c23867 43.67%,
+      #cd7d98 138.4%);
+}
+.bg-fairy {
+  background: linear-gradient(179.75deg,
+      #971b45 -19.96%,
+      #c23867 43.67%,
+      #cd7d98 138.4%);
+}
+bg-psychic {
+  background: linear-gradient(179.75deg,
+      #a1a4ce -19.96%,
+      #494d96 43.67%,
+      #191b33 138.4%);
+}
+.bg-dragon {
+  background: linear-gradient(179.75deg,
+      #478a93 -19.96%,
+      #56a4ae 43.67%,
+      #a2bec1 138.4%);
+}
+.bg-ground {
+  background: linear-gradient(179.75deg,
+      #654008 -19.96%,
+      #895c1a 43.67%,
+      #d69638 138.4%);
+}
+.bg-cold {
+  background: linear-gradient(177.03deg,
+      #6fbedf -11.97%,
+      #64cbf5 47.77%,
+      #bdebfe 136.72%);
+}
+.border-grass {
+  border-color: #7ec6c5;
+}
+.border-fire {
+  border-color: #f96d6f;
+}
+.border-water {
+  border-color: #20518d;
+}
+.border-bug {
+  border-color: #62db60;
+}
+.border-fighting {
+  border-color: #96402a;
+}
+.border-flying {
+  border-color: #735259;
+}
+.border-normal {
+  border-color: #735259;
+}
+.border-poison {
+  border-color: #5b3184;
+}
+.border-rock {
+  border-color: #7e7e7e;
+}
+.border-ghost {
+  border-color: #323569;
+}
+.border-dark {
+  border-color: #282a29;
+}
+.border-steel {
+  border-color: #5e736c;
+}
+.border-electric {
+  border-color: #ebe044;
+}
+.border-magic {
+  border-color: #971b45;
+}
+.border-fairy {
+  border-color: #971b45;
+}
+.border-psychic {
+  border-color: #a1a4ce;
+}
+.border-dragon {
+  border-color: #478a93;
+}
+.border-ground {
+  border-color: #654008;
+}
+.border-cold {
+  border-color: #6fbedf;
+}
+.color-grass {
+  color: #7ec6c5;
+}
+.color-fire {
+  color: #f96d6f;
+}
+.color-water {
+  color: #133258;
+}
+.color-bug {
+  color: #62db60;
+}
+.color-fighting {
+  color: #96402a;
+}
+.color-flying {
+  color: #735259;
+}
+.color-normal {
+  color: #735259;
+}
+.color-poison {
+  color: #5b3184;
+}
+.color-rock {
+  color: #7e7e7e;
+}
+.color-ghost {
+  color: #323569;
+}
+.color-dark {
+  color: #282a29;
+}
+.color-steel {
+  color: #5e736c;
+}
+.color-electric {
+  color: #0c1395;
+}
+.color-magic {
+  color: #971b45;
+}
+.color-fairy {
+  color: #971b45;
+}
+.color-psychic {
+  color: #a1a4ce;
+}
+.color-dragon {
+  color: #478a93;
+}
+.color-ground {
+  color: #654008;
+}

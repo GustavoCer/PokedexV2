@@ -1,0 +1,52 @@
+.Pokeinfo {
+  position: relative;
+  top: 10rem;
+  border-width: 10px;
+  margin: auto;
+  background-image: url(./infoback.png);
+  background-repeat: no-repeat;
+  height: 28rem;
+}
+.Pokeinfo__img {
+  position: relative;
+  bottom: 3.5rem;
+  margin: 0 auto;
+}
+.Pokeinfo__id {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.pokedexInfo__name {
+  font-size: 3rem;
+}
+.Pokeinfo__type {
+  display: inline-block;
+  flex-wrap: nowrap;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 1rem;
+  width: 10%;
+}
+
+.pokedexinfo__Stats {
+  border: 2px black solid;
+}
+.pokedex_Dream {
+  padding-top: 2em;
+  margin: 0 auto;
+}
+.pokecard__abilities {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 1rem;
+}
+.pokecard__abilities li {
+  background-color: rgb(236, 233, 233);
+  border-radius: 10%;
+  padding: 10px;
+}
+.poke-card__abilities {
+  margin-top: 12px;
+  color: rgb(73, 67, 29);
+}
